@@ -2,49 +2,62 @@
 
 Bem-vindo ao nosso mais recente desafio Challenge Back End!
 
-## Introdução
+# Alura ForumHub API 
 
-Um fórum é uma plataforma onde os participantes podem fazer perguntas e discutir sobre diferentes assuntos. No caso da Alura, o fórum é utilizado pelos alunos para tirar dúvidas relacionadas aos cursos e projetos. Por trás dessa interação, há um sistema complexo de armazenamento e gestão de dados, que é o que iremos replicar neste desafio.
+## Descrição
 
-O FórumHub é uma API REST que criaremos utilizando o framework Spring. Esta API será responsável pela gestão de tópicos, permitindo operações básicas de CRUD (CREATE, READ, UPDATE, DELETE).
+Este projeto é uma API REST para um fórum online, desenvolvido como parte do Challenge Back-End da Alura. A API, nomeada "FórumHub", é construída utilizando Spring Boot e permite a gestão de tópicos com operações CRUD completas.
 
-## Funcionalidades da API
+## Funcionalidades
 
-A API permitirá aos usuários:
+- **Criação de Tópicos:** Permite aos usuários criar novos tópicos de discussão no fórum.
+- **Listagem de Tópicos:** Os usuários podem visualizar uma lista de todos os tópicos existentes.
+- **Busca de Tópicos:** A API permite recuperar um tópico específico usando seu ID.
+- **Atualização de Tópicos:**  Os usuários autorizados podem modificar informações em tópicos existentes.
+- **Exclusão de Tópicos:** Tópicos podem ser removidos do fórum, mediante autorização.
 
-- Criar um novo tópico
-- Listar todos os tópicos existentes
-- Recuperar um tópico específico pelo seu identificador
-- Atualizar um tópico existente
-- Excluir um tópico
+## Tecnologias Utilizadas
 
-Essas operações são fundamentais para a interação básica com um sistema de fórum.
+- Java 
+- Spring Boot
+- Spring Data JPA
+- Spring Security
+- Flyway (Migrações de Banco de Dados)
+- Banco de Dados Relacional (ex: MySQL, PostgreSQL)
+- JWT (JSON Web Token) -  Autenticação e Autorização
 
-## Objetivos do Challenge
+## Como executar o projeto
 
-O objetivo principal deste challenge é implementar uma API REST completa seguindo as melhores práticas do modelo REST, incluindo:
+1. **Pré-requisitos:**
+   - Certifique-se de ter o Java JDK instalado (a versão recomendada está no arquivo `pom.xml`).
+   - Tenha o Spring Framework e um banco de dados relacional (como MySQL ou PostgreSQL) configurados em sua máquina.
+   
+2. **Clonar o Repositório:**
+   ```bash
+   git clone https://github.com/seu-usuario/alura_forumHub.git
+content_copy
+Use code with caution.
 
-- Implementação das operações CRUD para tópicos
-- Validações de entrada de dados conforme as regras de negócio estabelecidas
-- Utilização de um banco de dados relacional para persistência dos dados
-- Implementação de autenticação/autorização para controle de acesso aos recursos
+Configurar o Banco de Dados:
 
-## Recursos Adicionais
+Atualize as configurações do banco de dados no arquivo application.properties dentro da pasta src/main/resources.
 
-Além do código da API, disponibilizamos um diagrama do banco de dados do projeto para auxiliar na implementação. Encorajamos também a utilização de criatividade para personalizar e melhorar o projeto conforme julgar conveniente.
+Executar a Aplicação:
 
-## Começando
+Navegue até o diretório raiz do projeto e execute o comando:
 
-Para começar, clone este repositório e utilize o diagrama do banco de dados e as especificações fornecidas para guiar o desenvolvimento da API.
+./mvnw spring-boot:run
+content_copy
+Use code with caution.
+Bash
+Próximos Passos
 
-### Pré-requisitos
+Implementar funcionalidades para gerenciar respostas aos tópicos.
 
-- Java JDK (versão recomendada)
-- Spring Framework
-- Banco de dados relacional (por exemplo, MySQL, PostgreSQL)
+Integrar com um sistema de notificações para avisar os usuários sobre novas respostas.
 
-### Instalação
+Criar uma interface de usuário para interagir com a API.
 
-1. Clone o repositório:
-   ```sh
-   git clone https://github.com/gabriel-felberg/alura_forumHub.git
+Contribuindo
+
+Sinta-se à vontade para contribuir com este projeto! Você pode abrir issues para reportar bugs, sugerir melhorias ou enviar pull requests.
