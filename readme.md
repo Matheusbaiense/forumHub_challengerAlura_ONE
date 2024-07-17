@@ -1,7 +1,4 @@
-# Challenge Back End - FórumHub
-
-Bem-vindo ao nosso mais recente desafio Challenge Back End!
-
+```
 # Alura ForumHub API 
 
 ## Descrição
@@ -35,29 +32,28 @@ Este projeto é uma API REST para um fórum online, desenvolvido como parte do C
 2. **Clonar o Repositório:**
    ```bash
    git clone https://github.com/seu-usuario/alura_forumHub.git
-content_copy
-Use code with caution.
+   ```
 
-Configurar o Banco de Dados:
+3. **Configurar o Banco de Dados:**
+   - Atualize as configurações do banco de dados no arquivo `application.properties` dentro da pasta `src/main/resources`.
 
-Atualize as configurações do banco de dados no arquivo application.properties dentro da pasta src/main/resources.
+4. **Executar a Aplicação:**
+   - Navegue até o diretório raiz do projeto e execute o comando:
+     ```bash
+     ./mvnw spring-boot:run
+     ```
 
-Executar a Aplicação:
+## Próximos Passos
 
-Navegue até o diretório raiz do projeto e execute o comando:
+- Implementar funcionalidades para gerenciar respostas aos tópicos.
+- Integrar com um sistema de notificações para avisar os usuários sobre novas respostas.
+- Criar uma interface de usuário para interagir com a API.
 
-./mvnw spring-boot:run
-content_copy
-Use code with caution.
-Bash
-Próximos Passos
 
-Implementar funcionalidades para gerenciar respostas aos tópicos.
+## Contribuindo
 
-Integrar com um sistema de notificações para avisar os usuários sobre novas respostas.
+Sinta-se à vontade para contribuir com este projeto!  Você pode abrir issues para reportar bugs, sugerir melhorias ou enviar pull requests.
 
-Criar uma interface de usuário para interagir com a API.
+---
 
-Contribuindo
 
-Sinta-se à vontade para contribuir com este projeto! Você pode abrir issues para reportar bugs, sugerir melhorias ou enviar pull requests.
